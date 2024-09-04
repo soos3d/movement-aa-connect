@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@particle-network/connectkit": "^2.0.4",
+    "ethers": "^6.13.2",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
+    "react-toastify": "^10.0.5",
     "viem": "2"
   },
   "devDependencies": {
