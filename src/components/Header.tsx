@@ -34,7 +34,7 @@ const Header: React.FC = () => {
       <h1 className="text-4xl mt-4 font-bold mb-12 text-center flex items-center justify-center">
         <a
           href={mainHeadingContent.particleLinkHref}
-          className="text-purple-400 hover:text-purple-300 transition duration-300 ml-2"
+          className="text-purple-400 hover:text-purple-300 transition duration-300 mr-4"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -45,9 +45,10 @@ const Header: React.FC = () => {
             height={mainHeadingContent.particleImageHeight}
           />
         </a>
+
         <a
           href={mainHeadingContent.secondaryLinkHref}
-          className="text-purple-400 hover:text-purple-300 transition duration-300 ml-2"
+          className="text-purple-400 hover:text-purple-300 transition duration-300 ml-4"
           target="_blank"
           rel="noopener noreferrer"
         >

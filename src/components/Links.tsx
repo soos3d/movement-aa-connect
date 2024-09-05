@@ -100,10 +100,6 @@ const LinksGrid = () => {
           );
         })}
       </div>
-
-      <footer className="w-full flex justify-center items-center py-8">
-        <Image src="/dark.png" alt="Particle Logo" width={240} height={24} />
-      </footer>
     </>
   );
 };
