@@ -220,7 +220,7 @@ const executeTxNative = async () => {
 };
 ```
 
-For users utilizing an EIP1193 provider such as `ethers.js`, you'll need to leverage the Particle AA SDK. Install it with the following command:
+For users using an EIP1193 provider such as `ethers.js`, you'll need to leverage the Particle AA SDK. Install it with the following command:
 
 ```sh
 yarn add @particle-network/aa
