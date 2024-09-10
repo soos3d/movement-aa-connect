@@ -37,7 +37,7 @@ Follow the instructions:
 
 ✔ What is the template of your project? › create-next-app
 ✔ Which chains does your app support?​ › EVM
-✔ Which ERC-4337 Contract does your app support?​ › CYBERCONNECT-1.0.0
+✔ Which ERC-4337 Contract does your app support?​ › BICONOMY-2.0.0
 ✔ Does it support an embedded wallet?​ … yes
 ```
 
