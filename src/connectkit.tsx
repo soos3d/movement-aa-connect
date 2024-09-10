@@ -4,7 +4,6 @@ import React from "react";
 
 import { ConnectKitProvider, createConfig } from "@particle-network/connectkit";
 import { authWalletConnectors } from "@particle-network/connectkit/auth";
-import type { Chain } from "@particle-network/connectkit/chains";
 // embedded wallet start
 import { EntryPosition, wallet } from "@particle-network/connectkit/wallet";
 // embedded wallet end
@@ -12,7 +11,7 @@ import { EntryPosition, wallet } from "@particle-network/connectkit/wallet";
 import { aa } from "@particle-network/connectkit/aa";
 // aa end
 // evm start
-import { cyberTestnet, cyber } from "@particle-network/connectkit/chains";
+import { gnosisChiado, gnosis } from "@particle-network/connectkit/chains";
 import { evmWalletConnectors } from "@particle-network/connectkit/evm";
 // evm end
 
@@ -25,11 +24,6 @@ const walletConnectProjectId = process.env
 if (!projectId || !clientKey || !appId) {
   throw new Error("Please configure the Particle project in .env first!");
 }
-
-const supportChains: Chain[] = [];
-// evm start
-supportChains.push(cyberTestnet, cyber);
-// evm end
 
 const config = createConfig({
   projectId,
@@ -70,12 +64,12 @@ const config = createConfig({
 
     // aa config start
     aa({
-      name: "CYBERCONNECT",
-      version: "1.0.0",
+      name: "BICONOMY",
+      version: "2.0.0",
     }),
     // aa config end
   ],
-  chains: supportChains as unknown as readonly [Chain, ...Chain[]],
+  chains: [gnosisChiado, gnosis],
 });
 
 // Wrap your application with this component.

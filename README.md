@@ -7,9 +7,9 @@
   </h3>
 </div>
 
-# Particle Connect, Account Abstraction SDK, Next.js, & ethers V6 on the Cyber Chain
+# Particle Connect, Account Abstraction SDK, Next.js, & ethers V6 on the Gnosis Chain
 
-⚡️ Basic demo application using `@particle-network/connectkit` and `@particle-network/aa` to initiate social login and send transactions via an account abstraction smart account on the [Cyber Chain](https://docs.cyber.co/)
+⚡️ Basic demo application using `@particle-network/connectkit` and `@particle-network/aa` to initiate social login and send transactions via an account abstraction smart account on the [Gnosis Chain](https://www.gnosis.io/)
 
 > Note that Account Abstraction is included wihint the new `connectkit` package. `@particle-network/aa` is required when using an EIP 1193 provider like ehter.js.
 > This demo showcases both options.
@@ -62,9 +62,9 @@ Particle Network natively supports and facilitates the end-to-end utilization of
 
 👉 Learn more about the [Particle AA SDK](https://developers.particle.network/docs/aa-web-quickstart).
 
-## What is Cyber L2
+## What is Gnosis Chain
 
-[Cyber L2](https://docs.cyber.co/) is the first Ethereum Layer 2 designed for social applications and optimized for mass adoption, offering native account abstraction, seedless wallets, and a decentralized social graph protocol. With features like high scalability, decentralized storage, and Ethereum staking rewards, Cyber L2 provides an efficient gateway for web3 users and developers.
+**Gnosis Chain** is a scalable, low-cost Ethereum Layer 2, offering EVM compatibility, decentralized governance via GnosisDAO, and PoS-based security. It’s ideal for dApps, providing fast transactions, Ethereum interoperability, and seamless asset bridging, making it perfect for affordable, decentralized development.
 
 ***
 
@@ -74,7 +74,7 @@ Particle Network natively supports and facilitates the end-to-end utilization of
 
 ### Clone this repository
 ```
-git clone https://github.com/Particle-Network/cyber-aa-connect
+git clone https://github.com/Particle-Network/gnosis-aa-connect
 ```
 
 ### Install dependencies

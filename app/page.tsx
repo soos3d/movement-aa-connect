@@ -18,6 +18,8 @@ import {
   useSmartAccount,
 } from "@particle-network/connectkit";
 
+import { getChainIcon } from "@particle-network/connectkit/chains";
+
 // Eip1193 and AA Provider
 import { AAWrapProvider, SendTransactionMode } from "@particle-network/aa"; // Only needed with Eip1193 provider
 import { ethers, type Eip1193Provider } from "ethers";
@@ -36,6 +38,7 @@ export default function Home() {
   const [recipientAddress, setRecipientAddress] = useState<string>("");
   const [isSending, setIsSending] = useState<boolean>(false);
   const [transactionHash, setTransactionHash] = useState<string | null>(null);
+  const [iconUrl, setIconUrl] = useState("");
 
   // Connection status message based on the account's connection state
   const connectionStatus = isConnecting
@@ -84,6 +87,11 @@ export default function Home() {
    */
   useEffect(() => {
     const loadAccountData = async () => {
+      if (chainId) {
+        const iconUrl = getChainIcon(chainId);
+        setIconUrl(iconUrl);
+      }
+
       try {
         if (isConnected && smartAccount) {
           const address = await smartAccount.getAddress();
@@ -213,11 +221,22 @@ export default function Home() {
                 </button>
               </h2>
 
-              <h2 className="text-lg font-semibold mb-2 text-white">
-                Chain: <code>{chain?.name || "Loading..."}</code>
-              </h2>
+              <div className="flex items-center space-x-2 mb-2">
+                <h2 className="text-lg font-semibold text-white">
+                  Chain: <code>{chain?.name || "Loading..."}</code>
+                </h2>{" "}
+                {iconUrl && (
+                  <img
+                    src={iconUrl}
+                    alt="Chain Icon"
+                    className="w-8 h-8 rounded-full" // Tailwind CSS for styling
+                  />
+                )}
+              </div>
+
               <h2 className="text-lg font-semibold mb-2 text-white flex items-center">
-                Balance: {balance || "Loading..."}
+                Balance: {balance || "Loading..."}{" "}
+                {chain?.nativeCurrency.symbol}
                 <button
                   className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-1 px-2 ml-2 rounded transition duration-300 ease-in-out transform hover:scale-105 shadow-lg flex items-center"
                   onClick={() => fetchBalance(userAddress)}

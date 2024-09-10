@@ -2,7 +2,7 @@ import Image from "next/image";
 
 // Link to repository
 const repositoryLink = {
-  href: "https://github.com/Particle-Network/cyber-aa-connect",
+  href: "https://github.com/Particle-Network/gnosis-aa-connect",
   imgSrc: "https://static.particle.network/mintlify/snippets/logos/github.png",
   imgAlt: "GitHub Logo",
   text: "Check the repository",
@@ -38,15 +38,15 @@ const links = [
     description: "The L1 unifying all chains through Universal Accounts.",
   },
   {
-    href: "https://docs.cyber.co/",
-    title: "Cyber Documentation →",
+    href: "https://docs.gnosischain.com/node/",
+    title: "Gnosis Documentation →",
     description:
-      "Cyber is the first restaked Ethereum Layer 2 designed for social and optimized for mass adoption.",
+      "Gnosis Chain is a community-owned EVM-based network operated by a diverse set of validators around the world.",
   },
   {
-    href: "https://docs.cyber.co/build-on-cyber/faucets",
-    title: "Cyber Testnet Faucet →",
-    description: "Claim testnet ETH daily.",
+    href: "https://docs.gnosischain.com/tools/faucets/",
+    title: "Gnosis Testnet Faucet →",
+    description: "Claim testnet xDai daily.",
   },
 ];
 
