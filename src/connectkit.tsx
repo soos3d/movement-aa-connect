@@ -11,7 +11,7 @@ import { EntryPosition, wallet } from "@particle-network/connectkit/wallet";
 import { aa } from "@particle-network/connectkit/aa";
 // aa end
 // evm start
-import { gnosisChiado, gnosis } from "@particle-network/connectkit/chains";
+import { zircuitTestnet } from "@particle-network/connectkit/chains";
 import { evmWalletConnectors } from "@particle-network/connectkit/evm";
 // evm end
 
@@ -64,12 +64,12 @@ const config = createConfig({
 
     // aa config start
     aa({
-      name: "BICONOMY",
+      name: "SIMPLE",
       version: "2.0.0",
     }),
     // aa config end
   ],
-  chains: [gnosisChiado, gnosis],
+  chains: [zircuitTestnet],
 });
 
 // Wrap your application with this component.

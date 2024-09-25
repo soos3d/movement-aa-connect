@@ -38,15 +38,15 @@ const links = [
     description: "The L1 unifying all chains through Universal Accounts.",
   },
   {
-    href: "https://docs.gnosischain.com/node/",
-    title: "Gnosis Documentation →",
+    href: "https://zircuit.gitbook.io/zircuit/",
+    title: "Zircuit Documentation →",
     description:
       "Gnosis Chain is a community-owned EVM-based network operated by a diverse set of validators around the world.",
   },
   {
-    href: "https://docs.gnosischain.com/tools/faucets/",
-    title: "Gnosis Testnet Faucet →",
-    description: "Claim testnet xDai daily.",
+    href: "https://bridge.testnet.zircuit.com/",
+    title: "Zircuit Testnet Bridge →",
+    description: "Bridge Sepolia ETH to Zircuit.",
   },
 ];
 

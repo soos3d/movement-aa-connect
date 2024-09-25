@@ -15,15 +15,15 @@ const Header: React.FC = () => {
     particleImageAlt: "Particle Logo",
     particleImageWidth: 240,
     particleImageHeight: 24,
-    secondaryLinkHref: "https://www.gnosis.io/",
+    secondaryLinkHref: "https://www.zircuit.com/",
     secondaryImageSrc:
-      "https://cdn.prod.website-files.com/662931fe35e0c191d1733ab9/6630c01debf602bb95076dd6_Gnosis-Green-01.svg",
+      "https://cdn.prod.website-files.com/6520080f9c62b75fd6b07196/660452e427265e6b4b893d4c_zircuit-logo.svg",
     secondaryImageAlt: "Kakarot Logo",
-    secondaryImageWidth: 240,
-    secondaryImageHeight: 24,
+    secondaryImageWidth: 220,
+    secondaryImageHeight: 20,
   };
 
-  const subHeading = "Particle Connect + Gnosis Chain demo.";
+  const subHeading = "Particle Connect + Zircuit Chain demo.";
 
   return (
     <>

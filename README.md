@@ -7,9 +7,9 @@
   </h3>
 </div>
 
-# Particle Connect, Account Abstraction SDK, Next.js, & ethers V6 on the Gnosis Chain
+# Particle Connect, Account Abstraction SDK, Next.js, & ethers V6 on the Zircuit Testnet
 
-⚡️ Basic demo application using `@particle-network/connectkit` and `@particle-network/aa` to initiate social login and send transactions via an account abstraction smart account on the [Gnosis Chain](https://www.gnosis.io/)
+⚡️ Basic demo application using `@particle-network/connectkit` and `@particle-network/aa` to initiate social login and send transactions via an account abstraction smart account on the [Zircuit Testnet](https://www.zircuit.com/)
 
 > Note that Account Abstraction is included wihint the new `connectkit` package. `@particle-network/aa` is required when using an EIP 1193 provider like ehter.js.
 > This demo showcases both options.
@@ -37,7 +37,7 @@ Follow the instructions:
 
 ✔ What is the template of your project? › create-next-app
 ✔ Which chains does your app support?​ › EVM
-✔ Which ERC-4337 Contract does your app support?​ › BICONOMY-2.0.0
+✔ Which ERC-4337 Contract does your app support?​ › SIMPLE-2.0.0
 ✔ Does it support an embedded wallet?​ … yes
 ```
 
@@ -62,10 +62,11 @@ Particle Network natively supports and facilitates the end-to-end utilization of
 
 👉 Learn more about the [Particle AA SDK](https://developers.particle.network/docs/aa-web-quickstart).
 
-## What is Gnosis Chain
+## What is Zircuit
 
-**Gnosis Chain** is a scalable, low-cost Ethereum Layer 2, offering EVM compatibility, decentralized governance via GnosisDAO, and PoS-based security. It’s ideal for dApps, providing fast transactions, Ethereum interoperability, and seamless asset bridging, making it perfect for affordable, decentralized development.
+**Zircuit** is an EVM-compatible zero-knowledge rollup Layer 2 network. It combines existing infrastructure with zero-knowledge proofs in a hybrid architecture, focusing on sequencer-level security by monitoring the mempool for malicious transactions to prevent their block inclusion. 
 
+Involved in research areas like rollup security tooling, rollup compression, and scaling cryptography, Zircuit has received multiple Layer 2 research grants from the Ethereum Foundation. The network aims to provide developers with a platform for building decentralized applications featuring faster transactions and reduced fees.
 ***
 
 👉 Learn more about [Particle Network](https://particle.network).
@@ -74,7 +75,7 @@ Particle Network natively supports and facilitates the end-to-end utilization of
 
 ### Clone this repository
 ```
-git clone https://github.com/Particle-Network/gnosis-aa-connect
+git clone https://github.com/Particle-Network/zircuit-aa-connect
 ```
 
 ### Install dependencies
@@ -139,8 +140,8 @@ You can configure the smart account using the `aa` plugin located in `src/compon
 plugins: [
   // Smart Account (AA) configuration
   aa({
-    name: "CYBERCONNECT",
-    version: "1.0.0",
+    name: "SIMPLE",
+    version: "2.0.0",
   }),
 ],
 ```
