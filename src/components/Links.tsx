@@ -2,7 +2,7 @@ import Image from "next/image";
 
 // Link to repository
 const repositoryLink = {
-  href: "https://github.com/Particle-Network/gnosis-aa-connect",
+  href: "https://github.com/Particle-Network/zircuit-aa-connect",
   imgSrc: "https://static.particle.network/mintlify/snippets/logos/github.png",
   imgAlt: "GitHub Logo",
   text: "Check the repository",
@@ -40,8 +40,7 @@ const links = [
   {
     href: "https://zircuit.gitbook.io/zircuit/",
     title: "Zircuit Documentation →",
-    description:
-      "Gnosis Chain is a community-owned EVM-based network operated by a diverse set of validators around the world.",
+    description: "Zircuit is an EVM-compatible zero-knowledge rollup Layer 2.",
   },
   {
     href: "https://bridge.testnet.zircuit.com/",
