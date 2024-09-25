@@ -40,7 +40,7 @@ export default function Home() {
   const [transactionHash, setTransactionHash] = useState<string | null>(null);
   const [iconUrl, setIconUrl] = useState("");
 
-  // Connection status message based on the account's connection state
+  // Manage connection status message based on the account's connection state
   const connectionStatus = isConnecting
     ? "Connecting..."
     : isConnected
