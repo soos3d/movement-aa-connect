@@ -7,9 +7,9 @@
   </h3>
 </div>
 
-# Particle Connect, Account Abstraction SDK, Next.js, & ethers V6 on the Zircuit Testnet
+# Particle Connect, Account Abstraction SDK, Next.js, & ethers V6 on the Plume Testnet
 
-⚡️ Basic demo application using `@particle-network/connectkit` and `@particle-network/aa` to initiate social login and send transactions via an account abstraction smart account on the [Zircuit Testnet](https://www.zircuit.com/)
+⚡️ Basic demo application using `@particle-network/connectkit` and `@particle-network/aa` to initiate social login and send transactions via an account abstraction smart account on the [Plume Testnet](https://www.plumenetwork.xyz/)
 
 > Note that Account Abstraction is included wihint the new `connectkit` package. `@particle-network/aa` is required when using an EIP 1193 provider like ehter.js.
 > This demo showcases both options.
@@ -62,11 +62,10 @@ Particle Network natively supports and facilitates the end-to-end utilization of
 
 👉 Learn more about the [Particle AA SDK](https://developers.particle.network/docs/aa-web-quickstart).
 
-## What is Zircuit
+## What is Plume
 
-**Zircuit** is an EVM-compatible zero-knowledge rollup Layer 2 network. It combines existing infrastructure with zero-knowledge proofs in a hybrid architecture, focusing on sequencer-level security by monitoring the mempool for malicious transactions to prevent their block inclusion. 
+Plume is a modular blockchain built specifically for Real World Assets (RWAs). It integrates asset tokenization and compliance providers directly into the chain, simplifying the deployment of RWA projects. Plume also supports RWA composability through DeFi applications, enhancing the flexibility and utility of these assets in a decentralized environment.
 
-Involved in research areas like rollup security tooling, rollup compression, and scaling cryptography, Zircuit has received multiple Layer 2 research grants from the Ethereum Foundation. The network aims to provide developers with a platform for building decentralized applications featuring faster transactions and reduced fees.
 ***
 
 👉 Learn more about [Particle Network](https://particle.network).
@@ -75,7 +74,7 @@ Involved in research areas like rollup security tooling, rollup compression, and
 
 ### Clone this repository
 ```
-git clone https://github.com/Particle-Network/zircuit-aa-connect
+git clone https://github.com/Particle-Network/plume-aa-connect
 ```
 
 ### Install dependencies
