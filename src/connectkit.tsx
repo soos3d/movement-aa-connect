@@ -11,7 +11,7 @@ import { EntryPosition, wallet } from "@particle-network/connectkit/wallet";
 import { aa } from "@particle-network/connectkit/aa";
 // aa end
 // evm start
-import { zircuitTestnet } from "@particle-network/connectkit/chains";
+import { plumeTestnet } from "@particle-network/connectkit/chains";
 import { evmWalletConnectors } from "@particle-network/connectkit/evm";
 // evm end
 
@@ -69,7 +69,7 @@ const config = createConfig({
     }),
     // aa config end
   ],
-  chains: [zircuitTestnet],
+  chains: [plumeTestnet],
 });
 
 // Wrap your application with this component.

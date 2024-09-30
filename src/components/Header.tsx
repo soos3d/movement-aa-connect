@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const Header: React.FC = () => {
   const headContent = {
-    title: "Particle Auth Core + Gnosis Demo",
+    title: "Particle Auth Core + Plume Demo",
     metaDescription:
-      "Particle Connect with Account Abstraction Code demo in Next JS for the Gnosis chain.",
+      "Particle Connect with Account Abstraction Code demo in Next JS for the Plume chain.",
     favicon: "/favicon.ico",
   };
 
@@ -15,15 +15,14 @@ const Header: React.FC = () => {
     particleImageAlt: "Particle Logo",
     particleImageWidth: 240,
     particleImageHeight: 24,
-    secondaryLinkHref: "https://www.zircuit.com/",
-    secondaryImageSrc:
-      "https://cdn.prod.website-files.com/6520080f9c62b75fd6b07196/660452e427265e6b4b893d4c_zircuit-logo.svg",
-    secondaryImageAlt: "Kakarot Logo",
-    secondaryImageWidth: 220,
-    secondaryImageHeight: 20,
+    secondaryLinkHref: "https://www.plumenetwork.xyz/",
+    secondaryImageSrc: "/plume.png",
+    secondaryImageAlt: "Plume Logo",
+    secondaryImageWidth: 50,
+    secondaryImageHeight: 50,
   };
 
-  const subHeading = "Particle Connect + Zircuit Chain demo.";
+  const subHeading = "Particle Connect + Plume Chain demo.";
 
   return (
     <>

@@ -38,14 +38,14 @@ const links = [
     description: "The L1 unifying all chains through Universal Accounts.",
   },
   {
-    href: "https://zircuit.gitbook.io/zircuit/",
-    title: "Zircuit Documentation →",
-    description: "Zircuit is an EVM-compatible zero-knowledge rollup Layer 2.",
+    href: "https://docs.plumenetwork.xyz/plume",
+    title: "Plume Documentation →",
+    description: "Plume is an EVM-compatible zero-knowledge rollup Layer 2.",
   },
   {
-    href: "https://bridge.testnet.zircuit.com/",
-    title: "Zircuit Testnet Bridge →",
-    description: "Bridge Sepolia ETH to Zircuit.",
+    href: "https://testnet-bridge.plumenetwork.xyz/",
+    title: "Plume Testnet Bridge →",
+    description: "Bridge Sepolia ETH to Plume.",
   },
 ];
 
