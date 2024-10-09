@@ -2,7 +2,7 @@ import Image from "next/image";
 
 // Link to repository
 const repositoryLink = {
-  href: "https://github.com/Particle-Network/zircuit-aa-connect",
+  href: "https://github.com/Particle-Network/scroll-aa-connect",
   imgSrc: "https://static.particle.network/mintlify/snippets/logos/github.png",
   imgAlt: "GitHub Logo",
   text: "Check the repository",
@@ -38,14 +38,14 @@ const links = [
     description: "The L1 unifying all chains through Universal Accounts.",
   },
   {
-    href: "https://docs.plumenetwork.xyz/plume",
-    title: "Plume Documentation →",
-    description: "Plume is an EVM-compatible zero-knowledge rollup Layer 2.",
+    href: "https://docs.scroll.io/en/home",
+    title: "Scroll Documentation →",
+    description: "Scroll is a security-focused scaling solution for Ethereum.",
   },
   {
-    href: "https://testnet-bridge.plumenetwork.xyz/",
-    title: "Plume Testnet Bridge →",
-    description: "Bridge Sepolia ETH to Plume.",
+    href: "https://docs.scroll.io/en/user-guide/faucet/",
+    title: "Scroll Faucet →",
+    description: "Get Sepolia ETH and bridge to Scroll.",
   },
 ];
 

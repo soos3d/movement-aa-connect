@@ -11,8 +11,11 @@ import { EntryPosition, wallet } from "@particle-network/connectkit/wallet";
 import { aa } from "@particle-network/connectkit/aa";
 // aa end
 // evm start
-import { plumeTestnet } from "@particle-network/connectkit/chains";
-import { evmWalletConnectors } from "@particle-network/connectkit/evm";
+import { scroll, scrollSepolia } from "@particle-network/connectkit/chains";
+import {
+  evmWalletConnectors,
+  passkeySmartWallet,
+} from "@particle-network/connectkit/evm";
 // evm end
 
 const projectId = process.env.NEXT_PUBLIC_PROJECT_ID as string;
@@ -35,6 +38,7 @@ const config = createConfig({
       { walletId: "coinbaseWallet", label: "Popular" },
     ],
     language: "en-US",
+    connectorsOrder: ["passkey", "social", "wallet"],
   },
   walletConnectors: [
     authWalletConnectors(),
@@ -50,6 +54,8 @@ const config = createConfig({
         description: "Particle Connectkit Next.js Scaffold.",
         url: typeof window !== "undefined" ? window.location.origin : "",
       },
+      connectorFns: [passkeySmartWallet()],
+      multiInjectedProviderDiscovery: true,
       walletConnectProjectId: walletConnectProjectId,
     }),
     // evm end
@@ -64,12 +70,12 @@ const config = createConfig({
 
     // aa config start
     aa({
-      name: "SIMPLE",
+      name: "BICONOMY",
       version: "2.0.0",
     }),
     // aa config end
   ],
-  chains: [plumeTestnet],
+  chains: [scroll, scrollSepolia],
 });
 
 // Wrap your application with this component.

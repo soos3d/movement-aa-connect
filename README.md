@@ -7,9 +7,9 @@
   </h3>
 </div>
 
-# Particle Connect, Account Abstraction SDK, Next.js, & ethers V6 on the Plume Testnet
+# Particle Connect, Account Abstraction SDK, Next.js, & ethers V6 on the Scroll Chain
 
-⚡️ Basic demo application using `@particle-network/connectkit` and `@particle-network/aa` to initiate social login and send transactions via an account abstraction smart account on the [Plume Testnet](https://www.plumenetwork.xyz/)
+⚡️ Basic demo application using `@particle-network/connectkit` and `@particle-network/aa` to initiate social login and send transactions via an account abstraction smart account on the [Scroll Chain](https://scroll.io/)
 
 > Note that Account Abstraction is included wihint the new `connectkit` package. `@particle-network/aa` is required when using an EIP 1193 provider like ehter.js.
 > This demo showcases both options.
@@ -37,7 +37,7 @@ Follow the instructions:
 
 ✔ What is the template of your project? › create-next-app
 ✔ Which chains does your app support?​ › EVM
-✔ Which ERC-4337 Contract does your app support?​ › SIMPLE-2.0.0
+✔ Which ERC-4337 Contract does your app support?​ › BICONOMY-2.0.0
 ✔ Does it support an embedded wallet?​ … yes
 ```
 
@@ -62,9 +62,10 @@ Particle Network natively supports and facilitates the end-to-end utilization of
 
 👉 Learn more about the [Particle AA SDK](https://developers.particle.network/docs/aa-web-quickstart).
 
-## What is Plume
+## What is Scroll
 
-Plume is a modular blockchain built specifically for Real World Assets (RWAs). It integrates asset tokenization and compliance providers directly into the chain, simplifying the deployment of RWA projects. Plume also supports RWA composability through DeFi applications, enhancing the flexibility and utility of these assets in a decentralized environment.
+Scroll is an Ethereum Layer 2 scaling solution that aims to reduce transaction costs and improve scalability without sacrificing security.
+By using cutting-edge research in zero-knowledge (zk) proofs, Scroll introduces a zkEVM (Zero-Knowledge Ethereum Virtual Machine) that mirrors Ethereum's functionality on a more efficient Layer 2 network. This means that all activities on Scroll behave just like they do on Ethereum but with enhanced performance and lower costs.
 
 ***
 
@@ -74,7 +75,7 @@ Plume is a modular blockchain built specifically for Real World Assets (RWAs). I
 
 ### Clone this repository
 ```
-git clone https://github.com/Particle-Network/plume-aa-connect
+git clone https://github.com/Particle-Network/scroll-aa-connect
 ```
 
 ### Install dependencies
@@ -93,7 +94,7 @@ npm install
 This project requires several keys from Particle Network to be defined in `.env`. The following should be defined:
 - `NEXT_PUBLIC_PROJECT_ID`, the ID of the corresponding application in your [Particle Network dashboard](https://dashboard.particle.network/#/applications).
 - `NEXT_PUBLIC_CLIENT_KEY`, the ID of the corresponding project in your [Particle Network dashboard](https://dashboard.particle.network/#/applications).
--  `NEXT_PUBLIC_APP_ID`, the client key of the corresponding project in your [Particle Network dashboard](https://dashboard.particle.network/#/applications).
+- `NEXT_PUBLIC_APP_ID`, the client key of the corresponding project in your [Particle Network dashboard](https://dashboard.particle.network/#/applications).
 
 ### Start the project
 ```sh
