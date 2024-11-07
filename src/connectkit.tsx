@@ -1,65 +1,50 @@
 "use client";
 
 import React from "react";
-
 import { ConnectKitProvider, createConfig } from "@particle-network/connectkit";
 import { authWalletConnectors } from "@particle-network/connectkit/auth";
-// embedded wallet start
+import { evmWalletConnectors } from "@particle-network/connectkit/evm";
 import { EntryPosition, wallet } from "@particle-network/connectkit/wallet";
-// embedded wallet end
-// aa start
 import { aa } from "@particle-network/connectkit/aa";
-// aa end
-// evm start
-import { scroll, scrollSepolia } from "@particle-network/connectkit/chains";
-import {
-  evmWalletConnectors,
-  passkeySmartWallet,
-} from "@particle-network/connectkit/evm";
-// evm end
 
-const projectId = process.env.NEXT_PUBLIC_PROJECT_ID as string;
-const clientKey = process.env.NEXT_PUBLIC_CLIENT_KEY as string;
-const appId = process.env.NEXT_PUBLIC_APP_ID as string;
-const walletConnectProjectId = process.env
-  .NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID as string;
+import { defineChain } from "@particle-network/connectkit/chains";
 
-if (!projectId || !clientKey || !appId) {
-  throw new Error("Please configure the Particle project in .env first!");
-}
+// Define the Lumia testnet
+const movementDevnet = defineChain({
+  id: 30732,
+  name: "Movement Devnet",
+  nativeCurrency: {
+    decimals: 18,
+    name: "MOVE",
+    symbol: "MOVE",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://mevm.devnet.imola.movementnetwork.xyz"],
+    },
+  },
+  blockExplorers: {
+    default: {
+      name: "Explorer",
+      url: "https://explorer.devnet.imola.movementnetwork.xyz",
+    },
+  },
+  testnet: true,
+});
 
 const config = createConfig({
-  projectId,
-  clientKey,
-  appId,
-  appearance: {
-    recommendedWallets: [
-      { walletId: "metaMask", label: "Recommended" },
-      { walletId: "coinbaseWallet", label: "Popular" },
-    ],
-    language: "en-US",
-    connectorsOrder: ["passkey", "social", "wallet"],
-  },
+  projectId: process.env.NEXT_PUBLIC_PROJECT_ID!,
+  clientKey: process.env.NEXT_PUBLIC_CLIENT_KEY!,
+  appId: process.env.NEXT_PUBLIC_APP_ID!,
   walletConnectors: [
-    authWalletConnectors(),
-    // evm start
+    authWalletConnectors({}), // Social logins
+
+    // Default Web3 logins
     evmWalletConnectors({
-      // TODO: replace it with your app metadata.
-      metadata: {
-        name: "Connectkit Demo",
-        icon:
-          typeof window !== "undefined"
-            ? `${window.location.origin}/favicon.ico`
-            : "",
-        description: "Particle Connectkit Next.js Scaffold.",
-        url: typeof window !== "undefined" ? window.location.origin : "",
-      },
-      connectorFns: [passkeySmartWallet()],
-      multiInjectedProviderDiscovery: true,
-      walletConnectProjectId: walletConnectProjectId,
+      walletConnectProjectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID, // optional, retrieved from https://cloud.walletconnect.com
     }),
-    // evm end
   ],
+
   plugins: [
     // embedded wallet start
     wallet({
@@ -70,15 +55,14 @@ const config = createConfig({
 
     // aa config start
     aa({
-      name: "BICONOMY",
+      name: "SIMPLE",
       version: "2.0.0",
     }),
     // aa config end
   ],
-  chains: [scroll, scrollSepolia],
+  chains: [movementDevnet],
 });
 
-// Wrap your application with this component.
 export const ParticleConnectkit = ({ children }: React.PropsWithChildren) => {
   return <ConnectKitProvider config={config}>{children}</ConnectKitProvider>;
 };

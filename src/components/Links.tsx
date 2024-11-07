@@ -38,14 +38,14 @@ const links = [
     description: "The L1 unifying all chains through Universal Accounts.",
   },
   {
-    href: "https://docs.scroll.io/en/home",
-    title: "Scroll Documentation →",
-    description: "Scroll is a security-focused scaling solution for Ethereum.",
+    href: "https://docs.movementnetwork.xyz/",
+    title: "Movement Documentation →",
+    description: "Movement is a Move-based blockchain.",
   },
   {
-    href: "https://docs.scroll.io/en/user-guide/faucet/",
-    title: "Scroll Faucet →",
-    description: "Get Sepolia ETH and bridge to Scroll.",
+    href: "https://faucet.movementnetwork.xyz/?network=mevm",
+    title: "Movement Faucet →",
+    description: "Get MOVE tokens.",
   },
 ];
 

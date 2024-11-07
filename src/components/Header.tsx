@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const Header: React.FC = () => {
   const headContent = {
-    title: "Particle Auth Core + Scroll Demo",
+    title: "Particle Auth Core + Movement Demo",
     metaDescription:
-      "Particle Connect with Account Abstraction Code demo in Next JS for the Scroll chain.",
+      "Particle Connect with Account Abstraction Code demo in Next JS for the Movement Devnet.",
     favicon: "/favicon.ico",
   };
 
@@ -15,14 +15,14 @@ const Header: React.FC = () => {
     particleImageAlt: "Particle Logo",
     particleImageWidth: 240,
     particleImageHeight: 24,
-    secondaryLinkHref: "https://scroll.io/",
-    secondaryImageSrc: "/Scroll.png",
-    secondaryImageAlt: "Scroll Logo",
-    secondaryImageWidth: 150,
-    secondaryImageHeight: 150,
+    secondaryLinkHref: "https://movementlabs.xyz/",
+    secondaryImageSrc: "https://docs.movementnetwork.xyz/img/logo.svg",
+    secondaryImageAlt: "Movement Logo",
+    secondaryImageWidth: 70,
+    secondaryImageHeight: 70,
   };
 
-  const subHeading = "Particle Connect + Scroll Chain demo.";
+  const subHeading = "Particle Connect + Movement Devnet demo.";
 
   return (
     <>

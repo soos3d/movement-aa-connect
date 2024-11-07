@@ -7,9 +7,9 @@
   </h3>
 </div>
 
-# Particle Connect, Account Abstraction SDK, Next.js, & ethers V6 on the Scroll Chain
+# Particle Connect, Account Abstraction SDK, Next.js, & ethers V6 on the Movement Chain
 
-⚡️ Basic demo application using `@particle-network/connectkit` and `@particle-network/aa` to initiate social login and send transactions via an account abstraction smart account on the [Scroll Chain](https://scroll.io/)
+⚡️ Basic demo application using `@particle-network/connectkit` and `@particle-network/aa` to initiate social login and send transactions via an account abstraction smart account on the [Movement Chain](https://movementlabs.xyz/)
 
 > Note that Account Abstraction is included wihint the new `connectkit` package. `@particle-network/aa` is required when using an EIP 1193 provider like ehter.js.
 > This demo showcases both options.
@@ -37,7 +37,7 @@ Follow the instructions:
 
 ✔ What is the template of your project? › create-next-app
 ✔ Which chains does your app support?​ › EVM
-✔ Which ERC-4337 Contract does your app support?​ › BICONOMY-2.0.0
+✔ Which ERC-4337 Contract does your app support?​ › SIMPLE-2.0.0
 ✔ Does it support an embedded wallet?​ … yes
 ```
 
@@ -62,10 +62,9 @@ Particle Network natively supports and facilitates the end-to-end utilization of
 
 👉 Learn more about the [Particle AA SDK](https://developers.particle.network/docs/aa-web-quickstart).
 
-## What is Scroll
+## What is Movement
 
-Scroll is an Ethereum Layer 2 scaling solution that aims to reduce transaction costs and improve scalability without sacrificing security.
-By using cutting-edge research in zero-knowledge (zk) proofs, Scroll introduces a zkEVM (Zero-Knowledge Ethereum Virtual Machine) that mirrors Ethereum's functionality on a more efficient Layer 2 network. This means that all activities on Scroll behave just like they do on Ethereum but with enhanced performance and lower costs.
+Movement Blockchain is a high-performance, community-driven network of Move-based blockchains developed by Movement Labs. Focusing on scalability, security, and user accessibility, Movement Blockchain combines the strengths of the Move programming language—originally developed by Facebook for safe and efficient asset management—and modular customization. 
 
 ***
 
@@ -75,7 +74,7 @@ By using cutting-edge research in zero-knowledge (zk) proofs, Scroll introduces 
 
 ### Clone this repository
 ```
-git clone https://github.com/Particle-Network/scroll-aa-connect
+git clone https://github.com/Particle-Network/movement-aa-connect
 ```
 
 ### Install dependencies
@@ -145,32 +144,6 @@ plugins: [
   }),
 ],
 ```
-
-#### Available Smart Accounts
-
-Here is a list of supported smart accounts and their corresponding versions and chain IDs:
-
-- **`BICONOMY`**: A [Biconomy Smart Account](https://www.biconomy.io/smart-accounts).
-  - **Versions**: `1.0.0`, `2.0.0`
-  - **Chain IDs**: Specify relevant chain IDs as needed.
-
-- **`CYBERCONNECT`**: A [CyberConnect Smart Account](https://wallet.cyber.co/).
-  - **Version**: `1.0.0`
-  - **Chain IDs**: Specify relevant chain IDs as needed.
-
-- **`SIMPLE`**: A [SimpleAccount Implementation](https://github.com/eth-infinitism/account-abstraction/blob/develop/contracts/samples/SimpleAccount.sol).
-  - **Versions**: `1.0.0`, `2.0.0`
-  - **Chain IDs**: Specify relevant chain IDs as needed.
-
-- **`LIGHT`**: A [Light Account Implementation by Alchemy](https://github.com/alchemyplatform/light-account).
-  - **Version**: `1.0.2`
-  - **Chain IDs**: Specify relevant chain IDs as needed.
-
-- **`XTERIO`**: A [Xterio Smart Account](https://xter.io/build).
-  - **Version**: `1.0.0`
-  - **Chain IDs**: Specify relevant chain IDs as needed.
-
-> Check the [Particle AA Docs](https://developers.particle.network/api-reference/aa/sdks/desktop/web#initialization) to verify up to date information.
 
 #### Sending AA Transactions
 
